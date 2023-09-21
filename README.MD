@@ -8,11 +8,11 @@ This project focuses in the development of a model for the analysys a dataset co
 
 ## Structure
 
-The django project has four main parts which are "habitProject", "habitApp", "streakApp" and "userApp":
+The project has four main parts which are "Parcing", "Feature engineering", "Cross product feature (cpf)" and "Clustering":
 
 ## Installation
 
-With the VENV active, please go to the root "...OOFP\backend\" and install the requirments:
+With the VENV active, please go to the root and install the requirments:
 
 ```shell
 pip install -r requirements.txt

@@ -1,2 +1,7 @@
 top2vec
 python3.10
+pandas
+numpy
+json
+matplotlib
+sklearn

@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from yellowbrick.cluster import SilhouetteVisualizer
 from sklearn.metrics import silhouette_score
 from sklearn import mixture
 
