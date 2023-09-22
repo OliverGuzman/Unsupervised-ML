@@ -9,7 +9,6 @@ df_merged = pd.read_csv("file location")
 #Cross products features 
 df_cpf = df_merged.copy()
 df_cpf = df_cpf.drop(["Abstract","Update_Date","Number_Versions"],axis=1)
-df_cpf = df_cpf.drop(df_cpf.columns[(0)],axis=1)
 
 #Transforms any subject to one and any other to 0
 def return_total_amount_subject(value):

@@ -94,7 +94,18 @@ model = Top2Vec(list(df_csv_sample["Abstract"]))
 #query the model
 topic_sizes, topic_nums = model.get_topic_sizes()
 
-#Create a df with the model infomation
+#%%shows the documents with the highest probability and the row related to the doc
+documents, document_scores, document_ids = model.search_documents_by_topic(topic_num=2, num_docs=5)
+for doc, score, doc_id in zip(documents, document_scores, document_ids):
+    print(f"Document: {doc_id}, Score: {score}")
+    print("-----------")
+    print(doc)
+    print("-----------")
+    print(df_csv.loc[df_csv['Abstract'] == doc])
+    print("-----------")
+    print()
+
+#%%Create a df with the model infomation
 columns_df = ["Topic_Id","Abstract"]
 df_output = pd.DataFrame(columns=columns_df)
 
